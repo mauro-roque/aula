@@ -1,6 +1,6 @@
 package application.model;
-
 import java.util.Calendar;
+
 
 public class Compromisso extends AbstractAtividade{
     private Calendar dataInicial;
@@ -37,9 +37,4 @@ public class Compromisso extends AbstractAtividade{
         c.set(ano,mes,dia);
         this.dataFinal = c;
     }
-
-
-
-
-
 }

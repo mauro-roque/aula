@@ -1,7 +1,11 @@
 package application;
 
+import application.model.AbstractAtividade;
 import application.model.Compromisso;
 import application.model.Tarefa;
+
+import java.util.List;
+import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
@@ -17,7 +21,13 @@ public class App {
 
         System.out.println(c.getDetalhes());
 
+        List<AbstractAtividade> listaAtividades = new ArrayList<AbstractAtividade>();
+        //listaAtividades.add(t);
+        listaAtividades.add(c);
 
-
+        System.out.println("----------[Lista]----------");
+        for(AbstractAtividade a : listaAtividades){
+            System.out.println(a.getDetalhes());
+        }
     }
 }
