@@ -1,11 +1,11 @@
 package application.model;
-public abstract class abstractAtividade implements atividade{
+public abstract class AbstractAtividade implements Atividade{
     private String descricao;
     
-    public String getDescricao() {
-        return descricao;
-    }
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+    public String getDescricao() {
+        return descricao;
     }
 }

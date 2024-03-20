@@ -1,5 +1,5 @@
 package application.model;
-public class tarefa extends abstractAtividade{
+public class Tarefa extends AbstractAtividade{
     private boolean concluido;
     
     public void setConcluido(boolean concluido) {
@@ -10,8 +10,7 @@ public class tarefa extends abstractAtividade{
     }
 
     @Override
-    public String getDetalhe(){
+    public String getDetalhes(){
         return "[T]" + this.getDescricao();
-    }
-//aa
+    } 
 }
