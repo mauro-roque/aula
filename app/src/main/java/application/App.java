@@ -29,5 +29,13 @@ public class App {
         for(AbstractAtividade a : listaAtividades){
             System.out.println(a.getDetalhes());
         }
+
+        int[] resul = Compromisso.strDateToIntArray("10/10/2024");
+        
+
+        for (int i : resul) {
+            System.out.print(i);
+        }
+
     }
 }
